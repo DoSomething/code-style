@@ -8,10 +8,10 @@ We use [Autoprefixer](https://github.com/postcss/autoprefixer) as a postprocessi
 
 ### Formatting
 
- * We use two-space indents (not tabs), and wrap line-width to approximately 80 characters for readability.
- * We write each property on a new line.
+ * Use two-space indents (not tabs), and wrap line-width to approximately 80 characters for readability.
+ * Write each property on a new line.
  * Use single-quotes for strings.
- * When dealing with lengths, a `0` value should never have a unit.
+ * When dealing with lengths, a zero value should never have a unit.
 
  ```scss
   // Yep
@@ -42,12 +42,11 @@ We use [Autoprefixer](https://github.com/postcss/autoprefixer) as a postprocessi
 
 We use a modified [BEM](https://css-tricks.com/bem-101/) naming scheme for our CSS classes.
 
- * Use __blocks__ for top-level components. Class names should be lower-case and hyphenated, e.g. `.block-item`.
- * Use __elements__ for child components inside a block. Elements are named with a double-underscore, e.g. `.block-item__element`.
- * Use __modifiers__ for variations on a block. __Modifiers are named with a compound selector and a class prefixed by a single dash.__ For example, `.block-item.-modifier`.
+ * __Blocks__ are top-level components. Class names should be lower-case and hyphenated, e.g. `.block-item`.
+ * __Elements__ are child components inside a block. They are prefixed by the parent block and a double-underscore, e.g. `.block-item__element`.
+ * __Modifiers__ are variations on a block. _Unlike classic BEM, we declare modifiers with a compound selector and a class prefixed by a single dash._ For example, `.block-item.-modifier`.
 
 ```scss
-
 // An example block.
 .block-item {
   background-color: $gray;
@@ -68,7 +67,10 @@ Each file should contain exactly _one_ block, except when creating [theme files]
 
 ### Patterns
 
- * Include [KSS](http://warpspire.com/kss/) comments for any patterns.
+We build our interfaces using re-usable components, or _patterns_. This helps us keep things consistent through a growing codebase & iterate more rapidly by not re-inventing the wheel.
+
+ * Include [KSS](http://warpspire.com/kss/) documentation for any patterns.
+ * A pattern should only have modifiers at the block level. Avoid using individual modifiers for child elements if at all possible. This is probably an indication that a block should be split into two separate patterns.
 
 
 
