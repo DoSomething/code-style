@@ -1,11 +1,11 @@
 # SCSS Style Guide
 
-__Get ready to write some turbo-charged CSS.__ :art: We follow Hugo Giraudel's [Sass Guidelines](http://sass-guidelin.es), and use a [modified BEM class naming](#architecture) scheme. Read on for the highlights:
+__Get ready to write some turbo-charged CSS.__ :art: We follow Hugo Giraudel's [Sass Guidelines](http://sass-guidelin.es), and use a [modified BEM class naming](#class-naming) scheme. Read on for the highlights:
 
 1. [Tools](#tools)
 1. [Formatting](#formatting)
 1. [Good Code](#good-code)
-1. [Architecture](#architecture)
+1. [Class Naming](#class-naming)
 1. [Patterns](#patterns)
 
 ## Tools
@@ -36,7 +36,7 @@ We try to write clean, readable, maintainable stylesheets. Here's a few suggesti
  * Avoid nesting, aside from when writing pseudo-selectors or state classes. Otherwise, you can unintentionally output extremely specific selectors [which is a re-usability no-no](http://www.sitepoint.com/beware-selector-nesting-sass/).
 
 
-## Architecture
+## Class Naming
 
 We use a modified [BEM](https://css-tricks.com/bem-101/) naming scheme for our CSS classes.
 
