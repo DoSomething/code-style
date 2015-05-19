@@ -17,7 +17,7 @@ Be sure to install [EditorConfig](http://editorconfig.org) for your editor to au
  * Write each property on a new line. Leave an empty line between rulesets. 
  * Always use the most compact representation when using shorthand. For example, prefer `0 auto` over `0 auto 0`.
  * When dealing with lengths, a zero value should never have a unit.
- * Use single-quotes for strings.
+ * Use single-quotes for strings.  
 
  ```scss
   // nope
