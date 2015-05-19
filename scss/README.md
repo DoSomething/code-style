@@ -15,26 +15,9 @@ Be sure to install [EditorConfig](http://editorconfig.org) for your editor to au
 
  * Use two-space indents (not tabs), and limit line-width to approximately 80 characters for readability.
  * Write each property on a new line. Leave an empty line between rulesets. 
- * Always use the most compact representation when using shorthand. For example, prefer `0 auto` over `0 auto 0`.
+ * Always use the most compact shorthand representation. For example, use `0 auto` rather than `0 auto 0`.
  * When dealing with lengths, a zero value should never have a unit.
  * Use single-quotes for strings.  
-
- ```scss
-  // nope
-  .foo,
-  .foo-bar,
-  .baz {
-    display:block;
-    overflow:hidden;
-    margin:0px auto 0px }
-  
-  // yep
-  .foo, .foo-bar, .baz {
-    display: block;
-    overflow: hidden;
-    margin: 0 auto;
-  }
- ```
 
 ### Good Code
 
