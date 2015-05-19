@@ -10,7 +10,7 @@ __Get ready to write some turbo-charged CSS.__ :art: We follow Hugo Giraudel's [
 
 ## Tools
 
-We use [Sass](http://sass-lang.com) as our preprocessor of choice, because it allows us to build maintainable code quickly. We use the the latest version of [LibSass](http://libsass.org), a blazing-fast C implementation of the Sass compiler, on most projects.
+We use [Sass](http://sass-lang.com) as our preprocessor of choice, because it allows us to build maintainable code quickly. On most projects, we use the the latest version of [LibSass](http://libsass.org), a blazing-fast C implementation of the Sass compiler.
 
 [Susy](http://susy.oddbird.net) is a powerful toolkit that helps us build our interfaces on a fluid grid. This helps ensure consistent measurements and provides rules for layouts to comfortably expand and contract in a multi-device world. Our standard grid is split up into sixteen columns, with a 24 pixel static gutter between columns.
 
