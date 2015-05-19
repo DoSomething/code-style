@@ -1,8 +1,10 @@
 # SCSS Style Guide
 
-We use [Sass](http://sass-lang.com) as our preprocessor of choice, because it allows us to conveniently structure our styles and avoid code duplication. We use the latest version of [LibSass](http://libsass.org) a blazing-fast C implementation of the Sass compiler. LibSass is nearly at feature parity with the original Ruby compiler, but it's still worth [checking compatibility](http://sass-compatibility.github.io) if something doesn't seem to be working correctly.
+We use [Sass](http://sass-lang.com) as our preprocessor of choice, because it allows us to build maintainable code quickly. We use the the latest version of [LibSass](http://libsass.org), a blazing-fast C implementation of the Sass compiler, on most projects.
 
-We use [Autoprefixer](https://github.com/postcss/autoprefixer) as a postprocessing step to add all of our vendor prefixes.
+We use [Susy](http://susy.oddbird.net) to build our interfaces on a fluid grid. This helps ensure consistent measurements and provides rules for layouts to comfortably expand and contract in a multi-device world. Our standard grid is split up into sixteen columns, with a 24 pixel static gutter between columns.
+
+We use [Autoprefixer](https://github.com/postcss/autoprefixer) as a postprocessing step to add all of our vendor prefixes. Vendor prefixes are added for the last 4 versions of evergreen browsers and the latest [Firefox ESR](https://www.mozilla.org/en-US/firefox/organizations/faq/) release.
 
 ### Formatting
 
@@ -26,7 +28,6 @@ We use [Autoprefixer](https://github.com/postcss/autoprefixer) as a postprocessi
     display:block;
     overflow:hidden;
     margin:0px auto 0px }
-
  ```
 
 ### Good Code
