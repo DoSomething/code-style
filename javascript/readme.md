@@ -13,12 +13,13 @@ _more stuff to add here_
 1. [Strings](#strings)
 1. [Naming Conventions](#naming-conventions)
 1. [Whitespace](#whitespace)
+1. [Comments](#comments)
 
 
 
 ## Strings 
 
-Use single quotes `''` for strings:
+Use single quotes `''` for strings.
 
 ```javascript
 
@@ -33,7 +34,7 @@ var title = 'Commander Space Cat';
 
 ## Naming Conventions
 
-Use camelCase for naming variables, objects, functions, and instances:
+Use camelCase for naming variables, objects, functions, and instances.
 
 ```javascript
 
@@ -52,7 +53,7 @@ function activatePulseCannon() { }
 
 DoSomething.org projects typically include an [Editor Config](http://editorconfig.org/) file to help enforce editor settings across code editors.
 
-Use 2 spaces for indentation:
+Use 2 spaces for indentation.
 
 ```javascript
 
@@ -72,7 +73,7 @@ function() {
 
 ```
 
-Use a single space before the leading curly brace:
+Use a single space before the leading curly brace.
 
 ```javascript
 
@@ -88,7 +89,7 @@ function spaceCatFancier() {
 
 ```
 
-Use a single space before the opening parenthesis in control statements (`if`, `while`, `for`, etc):
+Use a single space before the opening parenthesis in control statements (`if`, `while`, `for`, etc).
 
 ```javascript
 
@@ -104,3 +105,69 @@ if (isSpaceMouse) {
 
 ```
 
+Do not use any spaces before the argument list in function calls and declarations.
+
+```javascript
+
+// nope
+function catchNemesis () {
+  console.log('use laser mouse trap');
+}
+
+// yep
+function catchNemesis() {
+  console.log('use laser mouse trap');
+}
+
+```
+
+Use spaces between operators and operands.
+
+```javascript
+
+// nope
+var laserEyes=x*2;
+
+// yep
+var laserEyes = x * 2;
+
+```
+
+
+## Comments
+
+Use `/** ... */` for multi-line comments. Include a description, define the parameters (specify the types within curly braces and title case) and return values.
+Use an empty commented out line between the description and parameter definitions.
+
+```javascript
+
+// nope
+// Executes a method to catch one of the fiesty villainous Space Mice based on 
+// the name of the Space Mouse provided
+//
+// @param {String} name
+// @return {Object} spaceMouse
+function catchNemesis(name) {
+  
+  // ... do something to catch space mouse ...
+  
+  return spaceMouse;
+}
+
+
+// yep
+/**
+ * Executes a method to catch one of the fiesty villainous Space Mice based on 
+ * the name of the Space Mouse provided
+ *
+ * @param {String} name
+ * @return {Object} spaceMouse
+ */
+function catchNemesis(name) {
+  
+  // ... do something to catch space mouse ...
+  
+  return spaceMouse;
+}
+
+```
