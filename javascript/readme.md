@@ -12,6 +12,7 @@ _more stuff to add here_
 
 1. [Strings](#strings)
 1. [Naming Conventions](#naming-conventions)
+1. [Whitespace](#whitespace)
 
 
 
@@ -21,10 +22,10 @@ Use single quotes `''` for strings:
 
 ```javascript
 
-// bad
+// nope
 var title = "Commander Space Cat";
 
-// good
+// yep
 var title = 'Commander Space Cat';
 
 ```
@@ -36,11 +37,11 @@ Use camelCase for naming variables, objects, functions, and instances:
 
 ```javascript
 
-// bad
+// nope
 var pulse_blaster;
 function activate_pulse_cannon() { }
 
-// good
+// yep
 var pulseBlaster;
 function activatePulseCannon() { }
 
@@ -55,7 +56,7 @@ Use 2 spaces for indentation:
 
 ```javascript
 
-// bad
+// nope
 function() {
 ••••var spaceLitter;
 }
@@ -64,7 +65,7 @@ function() {
 •var spaceLitter;
 }
 
-// good
+// yep
 function() {
 ••var spaceLitter;
 }
@@ -75,12 +76,12 @@ Use a single space before the leading curly brace:
 
 ```javascript
 
-// bad 
+// nope 
 function spaceCatFancier(){
   console.log('accepted human');
 }
 
-// good
+// yep
 function spaceCatFancier() {
  console.log('accepted human'); 
 }
@@ -91,12 +92,12 @@ Use a single space before the opening parenthesis in control statements (`if`, `
 
 ```javascript
 
-// bad 
+// nope 
 if(isSpaceMouse) {
   catchNemesis();
 }
 
-// good
+// yep
 if (isSpaceMouse) {
   catchNemesis();
 }
